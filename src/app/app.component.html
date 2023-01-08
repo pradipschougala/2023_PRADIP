@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Messaging App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 95%;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            width: 100%;
+            background-image: linear-gradient(to right, #00b4db, #0083b0);
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .header h1 {
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .search-container {
+            width: 95%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-bottom: 1px solid #0083b0;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .search-container button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #0083b0;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .messages-container {
+            width: 95%;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .message {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .message.sent {
+            background-color: #00b4db;
+            float: right;
+            color: #fff;
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        .message.received {
+            background-color: #f2f2f2;
+            float: left;
+            color: #000;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .message p {
+            margin: 0;
+        }
+
+        .message-input-container {
+            width: 95%;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .message-input-container input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .message-input-container button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #0083b0;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Messaging App</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div class="messages-container">
+            <div class="message sent">
+                <p>Hey! How are you?</p>
+            </div>
+            <div class="message received">
+                <p>I'm good, thanks. How about you?</p>
+            </div>
+            <div class="message sent">
+                <p>I'm good too!</p>
+            </div>
+        </div>
+        <div class="message-input-container">
+            <input type="text" placeholder="Type your message...">
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+
+</html>
